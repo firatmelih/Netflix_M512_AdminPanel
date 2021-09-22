@@ -1,0 +1,31 @@
+:root {
+  --main-background-color: #141414;
+  --main-background-color-2: #3700ec;
+  --main-color: #e5e5e5;
+  --main-color-2: #100d20;
+  --main-color-hover: #b3b3b3;
+  overflow-x: hidden !important;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    background: none;
+  }
+}
+
+body {
+  //   background-image: url("https://images.alphacoders.com/112/1127039.jpg");
+  background-color: var(--main-background-color);
+  // overflow: scroll;
+  // -ms-overflow-style: none !important; /* IE and Edge */
+  // scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
+}
