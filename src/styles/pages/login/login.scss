@@ -3,6 +3,7 @@
     height: 150px;
     width: auto;
   }
+
   background: #1c92d2; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -47,30 +48,33 @@
     min-height: 400px;
     min-width: 450px;
     h1 {
-      color: #81b7d4;
+      color: white;
       border-bottom: white solid 5px;
       width: 100%;
-      padding-bottom: 75px;
+      padding-bottom: 3vh;
     }
     .upper {
       padding-top: 25px;
-
       display: flex;
       flex-direction: column;
       padding-bottom: 2vh;
       .MuiFormControl-root {
         label {
-          color: #5a9cdf;
+          color: black;
+          font-weight: 500;
         }
         background-color: var(--main-color);
         border-radius: 5px;
         margin-bottom: 15px;
-        box-shadow: rgb(255 255 255 / 55%) 0px -13px 20px,
-          rgb(192 192 192 / 75%) 0px 100px 150px;
+      }
+      button {
+        span {
+          color: #0575e6;
+        }
       }
     }
     .lower {
-      padding-top: 55px;
+      padding-top: 2vw;
       width: 100%;
       border-top: 5px solid white;
       display: flex;

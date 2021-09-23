@@ -7,12 +7,18 @@ import {
 import React from "react";
 import Login from "../pages/login/Login";
 
-const UnAuthorizedRoutes = () => {
+const UnAuthorizedRoutes = (props) => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Login />
+        <Route exact path="/login">
+          <Login
+            authorized={props.authorized}
+            setAuthorized={props.setAuthorized}
+          />
+        </Route>
+        <Route exact path="/*">
+          <Redirect to="/login" />
         </Route>
       </Switch>
     </Router>
